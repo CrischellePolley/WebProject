@@ -19,12 +19,14 @@
  * https://stackoverflow.com/questions/6643375/javascript-multi-dimensional-object
  */
 const items = { 0: { id:"id", image:"image", name:"item1", price:"$49.73", sizes:"M, L",  colors:"red, blue", desc:"This is pants"},
-                1: { id:"id", image:"shirt.png", name:"item2", price:"$15.99", sizes:"S, XL",  colors:"green", desc:"This is shirt"} 
+                1: { id:"item_page.html", image:"shirt.png", name:"item2", price:"$15.99", sizes:"S, XL",  colors:"green", desc:"This is shirt"} 
               };
 
 
 function searchItems(str) {
-    forEach
+    for(id in items) {
+        document.writeln(id);
+    }
 }
 
 function addToCart() {
@@ -34,7 +36,8 @@ function addToCart() {
 }
 
 function displayItems() {
-    items.getElementById(1);
+    //const image = items[1].image;
+    document.getElementById("main").innerHTML = "<img src = \"shirt.png\" width = 10% height = 10%>";
 }
 
-window.addEventListener("load", addToCart, false);
+//window.addEventListener("load", addToCart, false);
