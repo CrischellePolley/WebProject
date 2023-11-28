@@ -1,6 +1,3 @@
-// Each clothing item needs to be assigned a unique ID that 
-// can be associated with all its information. Should 
-
 /* Use event listener to automatically call a function in js,
  * like this
  * window.addEventListener("load", clothes, false);
@@ -13,19 +10,87 @@
 
 
 /* List of items
- * id: { image, name, price, sizes, colors, description }
+ * id: { image, name, type, price, sizes, colors, description }
  * Reference a specific item by using items[id]["name"] or 
  * items[id].name
  * https://stackoverflow.com/questions/6643375/javascript-multi-dimensional-object
  */
-const items = { 0: { id:"id", image:"image", name:"item1", price:"$49.73", sizes:"M, L",  colors:"red, blue", desc:"This is pants"},
-                1: { id:"item_page.html", image:"shirt.png", name:"item2", price:"$15.99", sizes:"S, XL",  colors:"green", desc:"This is shirt"} 
+const items = { 0: { id:"test.html", image:"image", name:"item1", type:"pants", price:"$49.73", sizes:"M, L",  colors:"red, blue", desc:"This is pants"},
+                1: { id:"shirt.html", image:"shirt.png", name:"item2", type:"shirt", price:"$15.99", sizes:"S, XL",  colors:"green", desc:"This is shirt"} 
               };
 
+function createItemPage(itemId) {
+    // Take item_page template and change it based on which item is selected
+    // Use item's information to replace template
+    var page = items[itemId].id;
+    var w = window.open(page, "_blank", "fullscreen=yes");
+    w.document.open();
 
+    //w.document.title = document.title;
+
+    w.document.getElementsByTagName("head") = document.head;
+    document.write("<body>");
+    for(each in w.document.getElementsByTagName("head"))
+        document.write("<p>" + each + "</p>");
+    document.write("</body>");
+
+    //w.document.getElementsByTagName("body").innerHTML = document.body.innerHTML; 
+    //w.document.getElementsByTagName("div") = document.;
+    
+    w.document.close();
+    //page.head = document.getElementByTagName("head");
+
+    //itemPage.document.getElementsByTagName(head);
+
+
+    // Display new customized item page
+    //var page = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
+    //return page;
+}
+
+
+
+
+
+
+function displayItemsByAllTypes() {
+   // window.addEventListener("load", createItemPage(items[0]), false);
+    window.open(createItemPage(items[0]));
+}
+
+function displayItemsByType(type) {
+    // Search through items based on type
+    // Save items that are exact type and use loop to create and display 
+    // these items
+    window.addEventListener("load", createItemPage(items[0]), false);
+}
+
+// Choose a random item in items to display
+function getRandomItem() {
+
+}
+
+function trackDisplays() {
+    // Maybe use sessionStorage to keep track of which items 
+    // have been displayed so far
+    // Or randomize them based on types 
+}
+
+
+
+
+
+// Search for specific items based on page name (id in items)
 function searchItems(str) {
-    for(id in items) {
-        document.writeln(id);
+    document.writeln("<p>" + str + "</p>");
+    document.writeln("<p>" + typeof(str) + "</p>");
+    for(var item in items) {
+        document.writeln("<p>" + item + ": " + items[item].id + "</p>");
+        if(items[item].id == str) {
+            document.writeln("<p>Item has been found!</p>");
+        } else {
+            document.writeln("<p>This is not the item you are searching for.</p>");
+        }
     }
 }
 
@@ -35,9 +100,5 @@ function addToCart() {
     //document.getElementById("addtocart")
 }
 
-function displayItems() {
-    //const image = items[1].image;
-    document.getElementById("main").innerHTML = "<img src = \"shirt.png\" width = 10% height = 10%>";
-}
 
 //window.addEventListener("load", addToCart, false);

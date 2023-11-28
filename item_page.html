@@ -6,7 +6,7 @@
         <meta charset = "utf-8">
         <title>Name of Item</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
-        <script src = "script.js"></script>
+        <script type = "text/javascript" src = "script.js"></script>
     </head>
 
     <body> 
@@ -32,12 +32,17 @@
         <div class = "menu-bar">
             <ul>
                <li class = button id = "addtocart" onclick = "addToCart()">Add to Cart</li>
-               <li class = button id = "addtocart" onclick = "addToCart()">Checkout</li>
+               <li class = button id = "checkout" onclick = "checkout()">Checkout</li>
             </ul>
             
         </div>
 
+        <!-- Similar items displayed based on type of item-->
         <p>Similar Items</p>
+
+
+        <button onclick = "createItemPage(1)">Create Item Page</button>
+
         
     </body>
 
