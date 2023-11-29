@@ -117,10 +117,12 @@ body
 .models-images h2 {
     text-align: center; /* Center-aligns the text within the h2 element */
     /* Additional styles for the h2 tag if needed */
+}
 
 
 
 
+/* Cannot include html in css file
 
 <div class="item-details">
     <!-- ... (item details content) ... -->
@@ -143,6 +145,8 @@ body
         <img src="image10.jpg" alt="Image 10">
     </div>
 </div>
+
+*/
 
 
 
