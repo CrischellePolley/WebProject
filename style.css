@@ -99,8 +99,6 @@ body
     text-align: center;
 }
 
-
-
 /* Style for the images of models */
 .model {
     text-align: center;
@@ -119,3 +117,49 @@ body
 .models-images h2 {
     text-align: center; /* Center-aligns the text within the h2 element */
     /* Additional styles for the h2 tag if needed */
+
+
+
+
+
+<div class="item-details">
+    <!-- ... (item details content) ... -->
+</div>
+
+<!-- Images Section -->
+<div class="image-grid">
+    <div class="row">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+    </div>
+    <div class="row">
+        <img src="image6.jpg" alt="Image 6">
+        <img src="image7.jpg" alt="Image 7">
+        <img src="image8.jpg" alt="Image 8">
+        <img src="image9.jpg" alt="Image 9">
+        <img src="image10.jpg" alt="Image 10">
+    </div>
+</div>
+
+
+
+
+
+
+
+/* Styles for the image row container */
+.image-row {
+    display: flex;
+    gap: 20px; /* Adjust the gap between items */
+}
+
+/* Styles for each image-item block */
+.image-item {
+    text-align: center; /* Center-align content within each block */
+    width: 200px; /* Set a fixed width for each block */
+    padding: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for visual separation */
+}
