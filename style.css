@@ -98,3 +98,24 @@ body
 .sub-main p{
     text-align: center;
 }
+
+
+
+/* Style for the images of models */
+.model {
+    text-align: center;
+}
+
+.model img {
+    width: 500px;
+    height: auto;
+    margin: 20px; /* Adjust the margin value as needed for the space between images */
+}
+
+.models-images {
+    /* Other styles */
+}
+
+.models-images h2 {
+    text-align: center; /* Center-aligns the text within the h2 element */
+    /* Additional styles for the h2 tag if needed */
