@@ -120,10 +120,6 @@ body
 }
 
 
-
-
-
-
 /* Styles for the image row container */
 .image-row {
     display: flex;
@@ -137,3 +133,60 @@ body
     padding: 10px; /* Add padding for spacing */
     border: 1px solid #ccc; /* Add border for visual separation */
 }
+
+/* FORM STYLING BEGINS FOR SUPPORT PAGE */
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    width: 200%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: 415px;
+    margin-top: 50px;
+}
+
+form h3{
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: rgb(19, 105, 19);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+form button:hover
+{
+    background: rgb(91, 153, 96);
+    color: rgb(249,255,129);
+    transition: all 0.3s ease;
+}
+
+.text-contact p{
+    margin-right: 85px;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+/* SUPPORT PAGE STYLE ENDS */
