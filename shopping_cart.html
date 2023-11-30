@@ -21,9 +21,51 @@
             </ul>
         </div>
 
-        <h1>Your Cart</h1>
 
+
+        
+        
+        <!-- order summary update and changes 11/30/23 -->
+        <body>
+
+            
+            
+                      <h1>Order Summary</h1>
+            
+            
+                <div id="orderDetails">
+                    <!-- Order information will be displayed here -->
+                </div>
+            
+                <script>
+                    // Simulated order details for demonstration
+                    const itemsOrdered = [
+                        { name: "Item 1", price: 19.00 },
+                        { name: "Item 2", price: 44.99 },
+                        // Add more items as needed
+                    ];
+            
+                    // Calculate total price
+                    const totalPrice = itemsOrdered.reduce((acc, item) => acc + item.price, 0);
+            
+                    // Display order information
+                    const orderDetailsElement = document.getElementById("orderDetails");
+                    orderDetailsElement.innerHTML = `
+                        <h2>Items Ordered:</h2>
+                        <ul>
+                            ${itemsOrdered.map(item => `<li>${item.name} - $${item.price.toFixed(2)}</li>`).join('')}
+                        </ul>
+                        <h2>Total: $${totalPrice.toFixed(2)}</h2>
+                    `;
+                </script>   
+            
+            <!-- end of code for order summary information -->
+
+
+
+                    <!-- Payment Method Information -->
         <form method = "post" action = "script.js">
+            <h1>Payment Information</h1>
             <label for = "creditcardnum">Credit Card Number</label>
                 <input type = "text" id = "creditcardnum" name = "Credit Card Number" value = "xxxx xxxx xxxx">  
                 <br>
