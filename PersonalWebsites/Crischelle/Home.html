@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Home</title>
+
+		<style type = "text/css">
+		   strong   { color: #ffcccc; }
+		   p        { text-align: justify; 
+			      margin: .5em; }
+		   .floated { background-color: #ffcccc;
+			      font-size: 1.5em;
+			      font-family: arial, helvetica, sans-serif;
+			      padding: .2em; 
+			      margin-left: .5em;
+			      margin-top: -.5em;
+			      margin-bottom: .5em;
+			      float: left;
+			      text-align: center;
+			      width: 30%; }
+		    section { border-style: double; 
+			      border-width: 10px 5px;
+			      border-color: #ffcccc; 
+			      padding: 2em; }
+		    img { position: relative;
+			  -webkit-animation: movingImage linear 15s 1s infinite alternate;
+			  animation: movingImage linear 15s 1s infinite alternate; }
+		    @webkit-keyframes movingImage { 0% {opacity: 1; left: 50%; }
+						    25% {opacity: .5; left: 0%; }
+						    50% {opacity: 1; left: 50%; }
+						    75% {opacity: .5; left: 90%; }
+						    100% {opacity: 1; left: 50%; } }
+		    @keyframes movingImage { 0% {opacity: 1; left: 50%; }
+					     25% {opacity: .5; left: 0%; }
+					     50% {opacity: 1; left: 50%; }
+				             75% {opacity: .5; left: 90%; }
+					     100% {opacity: 1; left: 50%; } }
+
+		</style>
+	</head>
+
+	<body>
+		<br><br>
+		<!-- RGB for buttons is R255 G223 B239 from https://convertingcolors.com/rgb-color-255_223_239.html -->
+		<!-- hr tips: https://www.w3schools.com/tags/tag_hr.asp -->
+		<hr style = "height:5px; border-width:0; background-color:#FFCCCC">
+		<h1><center>Home</center></h1>
+		<hr style = "height:1px; border-width:0; background-color:#FFCCCC">
+
+		<section>
+			<p>Welcome to my first website! Here, I have included mainly my programming interests, although I have also added a little bit about
+			my biggest hobby, cooking. You can click any of the tabs below (except the Developer Log - under development) to take you to the other
+			pages. Enjoy browsing!
+		</section>
+		<br>
+		<img src = "PW_Images/purpleflower.jfif" width = "10%" height = "10%" alt = "Purple Flower">
+		<br>
+		<section>
+			<a href = "AboutMe.html"><h2 class = "floated">About Me</h2></a><strong>About Me</strong> contains some facts about myself, as well as 
+			my resume and cover letter (coming soon). 
+		</section>
+			
+		<section>		
+			<a href = "ProgrammingLanguages.html"><h2 class = "floated">Programming Languages</h2></a><strong>Programming Languages</strong> is a 
+			list of programming languages that I have heard of or have some proficiency in. Their strengths and weaknesses coming soon.
+		</section>
+			
+		<section> 
+			<a href = "ProgrammingSites.html"><h2 class = "floated">Programming Sites</h2></a><strong>Programming Sites</strong> contains a table 
+			of websites and their most useful webpages that have helped me to learn computer science.
+		</section>
+			
+		<section>		
+			<a href = "Recipes.html"><h2 class = "floated">Recipes</h2></a><strong>Recipes</strong> is some of my favorite recipes. This page is 
+			meant to break up the computer science jargon with a personal touch.</p>
+		</section>
+
+	</body>
+</html>
