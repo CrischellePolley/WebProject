@@ -99,6 +99,9 @@ body
     text-align: center;
 }
 
+
+
+
 /* Style for the images of models */
 .model {
     text-align: center;
@@ -120,6 +123,9 @@ body
 }
 
 
+
+
+
 /* Styles for the image row container */
 .image-row {
     display: flex;
@@ -133,6 +139,9 @@ body
     padding: 10px; /* Add padding for spacing */
     border: 1px solid #ccc; /* Add border for visual separation */
 }
+
+
+
 
 /* FORM STYLING BEGINS FOR SUPPORT PAGE */
 form{
@@ -197,25 +206,76 @@ form button:hover
 
 
 
-/*changes formatting in item page from line 34 to line 195*/
-.product {
-    display: flex;
+/*changes formatting in product page from line 34 to line 195*/
+.product-row {
+    display: block;
+    margin: 10px;
+}
+
+.product-row p{
+    background-color: rgb(151, 207, 151);
+    color: rgb(15, 61, 45);
+    margin:1%;
+    padding:2%;
     align-items: center;
+}
+
+.product-left {
+    background-color: white;
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 20px; 
+}
+
+.product-right {
+    background-color: white;
+    display: inline-block;
+    width: 49%;
     margin-bottom: 20px;
 }
 
 .product-image {
+    display: inline-block;
     width: 200px; /* Adjust width as needed */
     height: 300px; /* Adjust height as needed */
-    margin-right: 20px;
+    margin: 2%;
 }
 
 .product-details {
-    flex-grow: 1;
+    display: inline-block;
+    width: 50%;
+    background-color:rgb(175, 223, 175);
+    padding: 2%;
 }
 
-button {
-    display: block;
-    margin-top: 10px;
+.product-button-left {
+    display: inline-flex;
+    background-color: black;
+    float: left;
+
 }
+
+.product-button-right {
+    display: inline-flex;
+    background-color: black;
+    float: right;
+
+}
+
+.product-button-row {
+    background: white;
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+    
+}
+
+.product-button-row button{
+    background-color: rgb(19, 105, 19);
+    color: white;
+    margin: 5%;
+    
+}
+
+
 
