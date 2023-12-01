@@ -1,3 +1,4 @@
+/*FORMATTING FOR GENERAL*/
 *
 {
     padding: 0;
@@ -14,7 +15,8 @@ body
     font-family: sans-serif;
 }
 
-footer {
+footer 
+{
     text-align: center;
     background-color: #9c9b9b;
     color: white;
@@ -77,6 +79,10 @@ footer {
     transition: all 0.3s ease;
 }
 
+
+
+
+/*FORMATTING FOR HOME PAGE*/
 .main{
     background: url(images/background.jpeg);
     background-position-x: 215%;
@@ -131,7 +137,6 @@ footer {
     /* Additional styles for the h2 tag if needed */
 }
 
-
 /* Styles for the image row container */
 .image-row {
     display: flex;
@@ -146,7 +151,12 @@ footer {
     border: 1px solid #ccc; /* Add border for visual separation */
 }
 
-/* FORM STYLING BEGINS FOR SUPPORT PAGE */
+
+
+
+
+
+/* FORMATTING FOR SUPPORT PAGE */
 form{
     background: #fff;
     display: flex;
@@ -201,7 +211,6 @@ form button:hover
     justify-content: center;
     padding: 30px;
 }
-/* SUPPORT PAGE STYLE ENDS */
 
 
 
@@ -209,27 +218,6 @@ form button:hover
 
 
 
-/*changes formatting in item page from line 34 to line 195*/
-.product {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.product-image {
-    width: 200px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    margin-right: 20px;
-}
-
-.product-details {
-    flex-grow: 1;
-}
-
-button {
-    display: block;
-    margin-top: 10px;
-}
 
 
 /*FORMATTING FOR PRODUCTS PAGE*/
