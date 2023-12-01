@@ -16,10 +16,10 @@
             <ul>
                 <li><a href = 'home_page.html' class ="menu_links">Home</a></li>
                 <li><a href = 'item_page.html' class ="menu_links">Products</a></li>
-                <li><a href = 'shopping_cart.html' class ="menu_links">Orders</a></li>
+                <li><a href = 'order.html' class ="menu_links">Orders</a></li>
                 <li><a href = 'about_us.html' class ="menu_links">About Us</a></li>
                 <li><a href = 'support.html' class ="menu_links">Support</a></li>
-                <li><a href = '#' class ="button"> Sign Up</a></li>
+                <li><a href = 'shopping_cart.html' class ="button"> Sign Up</a></li>
             </ul>
         </div>
       
@@ -28,8 +28,9 @@
         <!-- Images Section -->               
         <div class="product-row">
                 <div class="product-left">
+                        <div class="product-image">
                         <img src="images/ray pancake.jpg" alt="Image 1" class="product-image">
-                        
+                        </div>
                         <div class="product-details">
                                 <p>Price: $19.00</p>
                                 <p>Item: Ray Pancake</p>
@@ -39,18 +40,19 @@
 
                                 <div class="product-button-row">
                                         <div class="product-button-left">
-                                                <button onclick = "addToCart(19.00, 'Ray Pancakes')">Add to Cart</button>
+                                                <button onclick = "addToCart('Ray Pancakes', 19.00)">Add to Cart</button>
                                         </div>
                                         <div class="product-button-right">
-                                                <button onclick = "checkout(19.00, 'Ray Pancakes')">Checkout</button>  
+                                                <button onclick = "checkout('Ray Pancakes', 19.00)">Checkout</button>  
                                         </div> 
                                 </div>
                         </div>   
                 </div>      
 
-                <div class="product-right">                
+                <div class="product-right">  
+                        <div class="product-image">             
                         <img src="images/saucy sundays.jpg" alt="Image 2" class="product-image">
-        
+                        </div>
                         <div class="product-details">   
                                 <p>Price: $19.00</p>
                                 <p>Item: Saucy Sundays</p>
@@ -60,10 +62,10 @@
 
                                 <div class="product-button-row">
                                         <div class="product-button-left">
-                                                <button onclick = "addToCart()">Add to Cart</button>
+                                                <button onclick = "addToCart('Saucy Sundays', 19.00)">Add to Cart</button>
                                         </div>
                                         <div class="product-button-right">
-                                                <button onclick = "checkout()">Checkout</button>  
+                                                <button onclick = "checkout('Saucy Sundays', 19.00)">Checkout</button>  
                                         </div> 
                                 </div>
                         </div>   
@@ -80,8 +82,15 @@
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Pink</p>
                                 <p>Description: 100% Cotton graphic tee</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>    
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Side Dish', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Side Dish', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>   
                         </div>
                 </div>  
 
@@ -94,8 +103,15 @@
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black</p>
                                 <p>Description: 100% Cotton graphic tee</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>    
+                               
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Salvadoe Dali', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Salvadoe Dali', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>    
                         </div>
         </div>
         
@@ -109,8 +125,15 @@
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black</p>
                                 <p>Description: 100% Cotton graphic tee</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>    
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Xtra Fries', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Xtra Fries', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>
                         </div>
                 </div>
                 
@@ -119,12 +142,19 @@
                        
                         <div class="product-details">   
                                 <p>Price: $44.99</p>
-                                <p>Item: Corgos</p>
+                                <p>Item: Cargos</p>
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Pink</p>
                                 <p>Description: 100% Cotton pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Cargos', 44.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Cargos', 44.99)">Checkout</button>  
+                                        </div> 
+                                </div> 
                         </div>
                 </div> 
         </div>   
@@ -139,8 +169,15 @@
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Pink, Red/White</p>
                                 <p>Description: 100% Nylon pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Street Cones', 2546.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Street Cones', 2546.99)">Checkout</button>  
+                                        </div> 
+                                </div> 
                         </div>
                 </div>
         
@@ -153,8 +190,15 @@
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Green</p>
                                 <p>Description: 100% Cotton pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Women\'s Plated Pants', 120.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Women\'s Plated Pants', 120.99)">Checkout</button>  
+                                        </div> 
+                                </div> 
                         </div>
                 </div>
         </div>
@@ -169,8 +213,15 @@
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Green</p>
                                 <p>Description: 100% Cotton pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Men\'s Sport Chino Pants', 120.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Men\'s Sport Chino Pants', 120.99)">Checkout</button>  
+                                        </div> 
+                                </div>  
                         </div>
                 </div>     
         
@@ -178,13 +229,20 @@
                         <img src="images/lax chino.jpg" alt="Image 10" class="product-image"> 
         
                         <div class="product-details">
-                                <p>For: $120.99</p>
-                                <p>Item: Men's Sport Chino Pants</p>
+                                <p>Price: $120.99</p>
+                                <p>Item: Men's Lax Chino Pants</p>
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Green, gray</p>
                                 <p>Description: 100% Cotton pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Men\'s Lax Chino Pants', 120.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Men\'s Lax Chino Pants', 120.99)">Checkout</button>  
+                                        </div> 
+                                </div>  
                         </div>
                 </div>
         </div>
@@ -194,13 +252,20 @@
                         <img src="images/corgo similar item.jpg" alt="Image 9" class="product-image"> 
                         
                         <div class="product-details">
-                                <p>Price: $120.99</p>
-                                <p>Item: Men's Sport Chino Pants</p>
+                                <p>Price: $27.00</p>
+                                <p>Item: Women's Sport Chino Pants</p>
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Green</p>
                                 <p>Description: 100% Cotton pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Women\'s Sport Chino Pants', 27.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Women\'s Sport Chino Pants', 27.00)">Checkout</button>  
+                                        </div> 
+                                </div>  
                         </div>
                 </div>     
         
@@ -208,13 +273,20 @@
                         <img src="images/shirt similar item.jpg" alt="Image 10" class="product-image"> 
         
                         <div class="product-details">
-                                <p>For: $120.99</p>
-                                <p>Item: Men's Sport Chino Pants</p>
+                                <p>Price: $12.99</p>
+                                <p>Item: 11 11 Shirt</p>
                                 <p>Size: S, M, L, XL</p>
                                 <p>Color: White, Navy Blue, Black, Green, gray</p>
                                 <p>Description: 100% Cotton pants</p>
-                                <button class="product-button" onclick = "addToCart()">Add to Cart</button>
-                                <button class="product-button" onclick = "checkout()">Checkout</button>  
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('11 11 Shirt', 12.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('11 11 Shirt', 12.99)">Checkout</button>  
+                                        </div> 
+                                </div>
                         </div>
                 </div>
         </div>
