@@ -1,0 +1,318 @@
+/*css document*/
+
+body {
+  background-image: url("kaabaBG.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#title {
+  /*border properties*/
+  border-style: outset;
+  border-color: gold;
+  border-width: 5px;
+  border-radius: 305px;
+  padding: 10px;
+
+  /*background properties*/
+  background-color: #bff5cc;
+
+  /*size properties*/
+  height: 150px;
+  width: 700px;
+  /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 30px;
+  color: green;
+
+  /*margin properties*/
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+
+  /*Animation properties*/
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#clock{
+	/*border*/
+	border-style: outset;
+  border-color: gold;
+  border-width: 5px;
+  border-radius: 15px;
+  padding: 10px;
+	
+	 /*background properties*/
+  background-color: #bff5cc;
+	
+	/*size properties*/
+  height: 80px;
+  width: 700px;
+	
+	 /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 70px;
+  color: black;
+  
+  /*margin properties*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  /*Animation properties*/
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+	
+}
+
+
+#frame1{
+	/*border properties*/
+
+  border-style: outset;
+  border-color: gold;
+  border-width: 10px;
+  border-radius: 15px;
+
+  /*background properties*/
+  background-color: #bff5cc;
+
+  /*size properties*/
+  height: 600px;
+  width: 500px;
+  /*font properties*/
+
+  /*margin properties*/
+  float: left;
+  position: relative;
+  margin-left: 100px;
+
+  /*Animation properties*/
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#frame2 {
+  /*border properties*/
+
+  border-style: outset;
+  border-color: gold;
+  border-width: 10px;
+  border-radius: 15px;
+
+  /*background properties*/
+  background-color: #bff5cc;
+
+  /*size properties*/
+  height: 1000px;
+  width: 1000px;
+  /*font properties*/
+
+  /*margin properties*/
+  float: Right;
+  margin-right: 100px;
+  position: relative;
+
+  /*Animation properties*/
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#Quran {
+  /*background properties*/
+  background-image: url("quran.png");
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-position: center;
+  background-size: cover;
+
+  /*border properties*/
+
+  border-style: solid;
+  border-color: gold;
+  border-width: 1px;
+
+  /*size properties*/
+  height: 425px;
+  width: 500px;
+
+  /*margin properties*/
+  /*position: absolute;*/
+  float: left;
+}
+
+#link {
+  /*border properties*/
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+  border-color: gold;
+
+  /*background properties*/
+  background-color: silver;
+
+  /*size properties*/
+  height: 175px;
+  width: 500px;
+
+  /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 14px;
+  color: Black;
+
+  /*margin properties*/
+  position: absolute;
+
+  top: 425px;
+}
+
+#aboutMe {
+  /*border properties*/
+  border: 1px solid;
+  border-radius: 4px;
+
+  /*background properties*/
+  background-color: white;
+
+  /*size properties*/
+  height: 80px;
+  width: 1000px;
+
+  /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 22px;
+  color: Black;
+
+  /*margin properties*/
+  position: absolute;
+}
+
+#text {
+  /*border properties*/
+  border: 1px solid;
+  border-radius: 4px;
+
+  /*background properties*/
+  background-color: #bff5cc;
+
+  /*size properties*/
+  height: 920px;
+  width: 1000px;
+
+  /*font properties*/
+  text-align: left;
+  font-family: consolas, sans-serif;
+  font-size: 33px;
+  color: darkgreen;
+
+  /*margin properties*/
+  position: absolute;
+  top: 80px;
+}
+
+#linkTitle {
+  /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 30px;
+  color: Black;
+}
+
+#linkLink {
+  /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 30px;
+  color: darkblue;
+}
+
+#frame3 {
+  /*border properties*/
+
+  border-style: outset;
+  border-color: gold;
+  border-width: 10px;
+  border-radius: 15px;
+
+  /*background properties*/
+  background-color: #bff5cc;
+
+  /*size properties*/
+  height: 615px;
+  width: 1000px;
+  /*font properties*/
+
+  /*margin properties*/
+  float: left;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  position: relative;
+
+  /*Animation properties*/
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#table {
+  /*font properties*/
+  text-align: center;
+  font-family: consolas, sans-serif;
+  font-size: 30px;
+  color: darkblue;
+}
+
+#frame4 {
+  /*border properties*/
+
+  border-style: outset;
+  border-color: gold;
+  border-width: 10px;
+  border-radius: 15px;
+
+  /*background properties*/
+  background-color: #bff5cc;
+
+  /*size properties*/
+  height: 200px;
+  width: 155px;
+
+  /*font properties*/
+  text-align: left;
+  font-family: consolas, sans-serif;
+  font-size: 25px;
+  color: darkgreen;
+
+  /*margin properties*/
+  float: right;
+  margin-right: 500px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  position: relative;
+
+  /*Animation properties*/
+  animation-name: glow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  50% {
+    box-shadow: 0px 0px 50px goldenrod;
+  }
+}
