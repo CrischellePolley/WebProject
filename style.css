@@ -1,3 +1,4 @@
+/*FORMATTING FOR GENERAL*/
 *
 {
     padding: 0;
@@ -5,12 +6,25 @@
     box-sizing: border-box;
 
 }
+
 body
 {
     background-color: antiquewhite;
     background-size: cover;
     background-position: top;
     font-family: sans-serif;
+}
+
+footer 
+{
+    text-align: center;
+    background-color: #9c9b9b;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .menu-bar
@@ -65,6 +79,10 @@ body
     transition: all 0.3s ease;
 }
 
+
+
+
+/*FORMATTING FOR HOME PAGE*/
 .main{
     background: url(images/background.jpeg);
     background-position-x: 215%;
@@ -119,7 +137,6 @@ body
     /* Additional styles for the h2 tag if needed */
 }
 
-
 /* Styles for the image row container */
 .image-row {
     display: flex;
@@ -134,7 +151,12 @@ body
     border: 1px solid #ccc; /* Add border for visual separation */
 }
 
-/* FORM STYLING BEGINS FOR SUPPORT PAGE */
+
+
+
+
+
+/* FORMATTING FOR SUPPORT PAGE */
 form{
     background: #fff;
     display: flex;
@@ -189,7 +211,6 @@ form button:hover
     justify-content: center;
     padding: 30px;
 }
-/* SUPPORT PAGE STYLE ENDS */
 
 
 
@@ -197,25 +218,88 @@ form button:hover
 
 
 
-/*changes formatting in item page from line 34 to line 195*/
-.product {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+
+
+/*FORMATTING FOR PRODUCTS PAGE*/
+.product-row {
+    display: block;
+    margin: 2%;
+}
+
+.product-row p{
+    background-color: rgb(151, 207, 151);
+    color: rgb(15, 61, 45);
+    margin:1%;
+    padding:2%;
+}
+
+.product-left {
+    background-color: rgb(184, 235, 184);
+    display: inline-block;
+    width: 49%;
+    margin-right: 15px;
+}
+
+.product-right {
+    background-color: rgb(184, 235, 184);
+    display: inline-block;
+    width: 49%;
 }
 
 .product-image {
-    width: 200px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-    margin-right: 20px;
+    display: inline-block;
+    background-color: white;
+    width: 40%;
+    height: 250px; 
+    overflow: hidden;
+    margin:2%;
+}
+
+.product-image img{
+    width: 100%; 
+    height: 100%; 
 }
 
 .product-details {
-    flex-grow: 1;
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+    background-color:rgb(175, 223, 175);
+    padding: 2%;
+    vertical-align: 225%;
 }
 
-button {
-    display: block;
-    margin-top: 10px;
+.product-button-left {
+    display: inline-block;
+    width: 50%;
+    margin-left: 8%;
 }
 
+.product-button-right {
+    display: inline-block;
+    width: 50%;
+}
+
+.product-button-row {
+    background-color: rgb(151, 207, 151);
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+    
+}
+
+.product-button-row button{
+    background-color: rgb(9, 123, 9);
+    color: white;
+    margin: 5%;
+    padding: 7%;
+    border: none;
+    
+}
+
+.product-button-row button:hover{
+    background: rgb(91, 153, 96);
+    color: rgb(249,255,129);
+    transition: all 0.3s ease;
+    
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset = "utf-8">
+        <title>Products</title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "script.js"></script>
+    </head>
+
+
+    <body> 
+       <!-- MENU OPTION SECTION -->
+        <div class = "menu-bar">
+            <ul>
+                <li><a href = 'home_page.html' class ="menu_links">Home</a></li>
+                <li><a href = 'item_page.html' class ="menu_links">Products</a></li>
+                <li><a href = 'order.html' class ="menu_links">Orders</a></li>
+                <li><a href = 'about_us.html' class ="menu_links">About Us</a></li>
+                <li><a href = 'support.html' class ="menu_links">Support</a></li>
+                <li><a href = 'shopping_cart.html' class ="button"> Sign Up</a></li>
+            </ul>
+        </div>
+      
+
+
+        <!-- Images Section -->               
+        <div class="product-row">
+                <div class="product-left">
+                        <div class="product-image">
+                        <img src="images/ray pancake.jpg" alt="Image 1" class="product-image">
+                        </div>
+                        <div class="product-details">
+                                <p>Price: $19.00</p>
+                                <p>Item: Ray Pancake</p>
+                                <p>Sizes: S, M, L, XL</p>
+                                <p>Colors: White, Navy Blue, Black</p>
+                                <p>Description: Cotton and spandex materials graphic tee</p>
+
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Ray Pancakes', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Ray Pancakes', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>
+                        </div>   
+                </div>      
+
+                <div class="product-right">  
+                        <div class="product-image">             
+                        <img src="images/saucy sundays.jpg" alt="Image 2" class="product-image">
+                        </div>
+                        <div class="product-details">   
+                                <p>Price: $19.00</p>
+                                <p>Item: Saucy Sundays</p>
+                                <p>Sizes: S, M, L, XL</p>
+                                <p>Colors: White, Navy Blue, Black</p>        
+                                <p>Description: Cotton and breathable materials graphic tee</p>
+
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Saucy Sundays', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Saucy Sundays', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>
+                        </div>   
+                </div>
+        </div>        
+        
+        <div class = "product-row">
+                <div class="product-left"> 
+                        <img src="images/side Dish.jpg" alt="Image 3" class="product-image"> 
+                       
+                        <div class="product-details">
+                                <p>Price: $19.00</p>
+                                <p>Item: Side Dish</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Pink</p>
+                                <p>Description: 100% Cotton graphic tee</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Side Dish', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Side Dish', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>   
+                        </div>
+                </div>  
+
+                <div class="product-right">
+                        <img src="images/Slavador Dali.jpg" alt="Image 4" class="product-image"> 
+                        
+                        <div class="product-details">
+                                <p>Price: $19.00</p>
+                                <p>Item: Salvadoe Dali</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black</p>
+                                <p>Description: 100% Cotton graphic tee</p>
+                               
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Salvadoe Dali', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Salvadoe Dali', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>    
+                        </div>
+        </div>
+        
+        <div class = "product-row">
+                <div class="product-left">
+                        <img src="images/xtra fries.jpg" alt="Image 5" class="product-image"> 
+        
+                        <div class="product-details">
+                                <p>Price: $19.00</p>
+                                <p>Item: Xtra Fries</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black</p>
+                                <p>Description: 100% Cotton graphic tee</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Xtra Fries', 19.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Xtra Fries', 19.00)">Checkout</button>  
+                                        </div> 
+                                </div>
+                        </div>
+                </div>
+                
+                <div class="product-right">
+                        <img src="images/women cargos.jpg" alt="Image 6" class="product-image"> 
+                       
+                        <div class="product-details">   
+                                <p>Price: $44.99</p>
+                                <p>Item: Cargos</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Pink</p>
+                                <p>Description: 100% Cotton pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Cargos', 44.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Cargos', 44.99)">Checkout</button>  
+                                        </div> 
+                                </div> 
+                        </div>
+                </div> 
+        </div>   
+
+        <div class="product-row">
+                <div class="product-left">
+                        <img src="images/street cones.jpg" alt="Image 7" class="product-image"> 
+                        
+                        <div class="product-details"> 
+                                <p>Price: $2546.99</p>
+                                <p>Item: Street Cones</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Pink, Red/White</p>
+                                <p>Description: 100% Nylon pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Street Cones', 2546.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Street Cones', 2546.99)">Checkout</button>  
+                                        </div> 
+                                </div> 
+                        </div>
+                </div>
+        
+                <div class="product-right">
+                        <img src="images/plated pants.jpg" alt="Image 8" class="product-image"> 
+                        
+                        <div class="product-details"> 
+                                <p>Price: $120.99</p>
+                                <p>Item: Women's Plated pants</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Green</p>
+                                <p>Description: 100% Cotton pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Women\'s Plated Pants', 120.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Women\'s Plated Pants', 120.99)">Checkout</button>  
+                                        </div> 
+                                </div> 
+                        </div>
+                </div>
+        </div>
+        
+        <div class="product-row">
+                <div class="product-left">
+                        <img src="images/olive chinos.jpg" alt="Image 9" class="product-image"> 
+                        
+                        <div class="product-details">
+                                <p>Price: $120.99</p>
+                                <p>Item: Men's Sport Chino Pants</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Green</p>
+                                <p>Description: 100% Cotton pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Men\'s Sport Chino Pants', 120.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Men\'s Sport Chino Pants', 120.99)">Checkout</button>  
+                                        </div> 
+                                </div>  
+                        </div>
+                </div>     
+        
+                <div class="product-right">
+                        <img src="images/lax chino.jpg" alt="Image 10" class="product-image"> 
+        
+                        <div class="product-details">
+                                <p>Price: $120.99</p>
+                                <p>Item: Men's Lax Chino Pants</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Green, gray</p>
+                                <p>Description: 100% Cotton pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Men\'s Lax Chino Pants', 120.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Men\'s Lax Chino Pants', 120.99)">Checkout</button>  
+                                        </div> 
+                                </div>  
+                        </div>
+                </div>
+        </div>
+
+        <div class="product-row">
+                <div class="product-left">
+                        <img src="images/corgo similar item.jpg" alt="Image 9" class="product-image"> 
+                        
+                        <div class="product-details">
+                                <p>Price: $27.00</p>
+                                <p>Item: Women's Sport Chino Pants</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Green</p>
+                                <p>Description: 100% Cotton pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('Women\'s Sport Chino Pants', 27.00)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('Women\'s Sport Chino Pants', 27.00)">Checkout</button>  
+                                        </div> 
+                                </div>  
+                        </div>
+                </div>     
+        
+                <div class="product-right">
+                        <img src="images/shirt similar item.jpg" alt="Image 10" class="product-image"> 
+        
+                        <div class="product-details">
+                                <p>Price: $12.99</p>
+                                <p>Item: 11 11 Shirt</p>
+                                <p>Size: S, M, L, XL</p>
+                                <p>Color: White, Navy Blue, Black, Green, gray</p>
+                                <p>Description: 100% Cotton pants</p>
+                                
+                                <div class="product-button-row">
+                                        <div class="product-button-left">
+                                                <button onclick = "addToCart('11 11 Shirt', 12.99)">Add to Cart</button>
+                                        </div>
+                                        <div class="product-button-right">
+                                                <button onclick = "checkout('11 11 Shirt', 12.99)">Checkout</button>  
+                                        </div> 
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+    </body>
+
+</html>
